@@ -5,7 +5,7 @@
   "main": "server/index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack --mode development --config webpack.config.js",
+    "build": "webpack --mode=development --config webpack.config.js",
     "start": "node ./server/index.js",
     "heroku-postbuild": "webpack --mode=production --config webpack.config.js"
   },
@@ -20,7 +20,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-rating": "^2.0.5",
-    "react-stars": "^2.2.5"
+    "react-stars": "^2.2.5",
+    "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -39,7 +40,6 @@
     "postcss": "^8.3.0",
     "postcss-loader": "^5.3.0",
     "style-loader": "^2.0.0",
-    "tailwindcss": "^2.1.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
   }
